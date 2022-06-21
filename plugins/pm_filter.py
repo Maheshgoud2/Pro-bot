@@ -470,17 +470,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('➕ 𝒜𝒹𝒹 ℳℯ 𝒯ℴ 𝒴ℴ𝓊𝓇 𝒢𝓇ℴ𝓊𝓅𝓈 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🔥 𝓒𝓱𝓪𝓷𝓷𝓮𝓵 1 🔥', url='https://t.me/+PHrxIyskSYBiZGE1'),
-            InlineKeyboardButton('🔥 𝓒𝓱𝓪𝓷𝓷𝓮𝓵 2 🔥', url='https://t.me/+etAuU8Y9IeE1OGQ1')
-            ],[
-            InlineKeyboardButton('🔥 𝓖𝓻𝓸𝓾𝓹 🔥', url='https://t.me/+Qgl9u-hN_7ZkYTVl'), 
+            InlineKeyboardButton('🔥 𝓒𝓱𝓪𝓷𝓷𝓮𝓵 🔥', url='https://t.me/MovieGod4uTeam'),
+            InlineKeyboardButton('🔥 𝓖𝓻𝓸𝓾𝓹 🔥', url='https://t.me/MoviesGod4u')
             ],[
             InlineKeyboardButton('🔍 𝓢𝓮𝓪𝓻𝓬𝓱', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('😈 𝓞𝔀𝓷𝓮𝓻 😈', url='https://t.me/Anmol0700')
+            InlineKeyboardButton('😈 𝓞𝔀𝓷𝓮𝓻 😈', url='https://t.me/MoviesGod4u')
             ],[
             InlineKeyboardButton('ℹ️ 𝓗𝓮𝓵𝓹', callback_data='help'),
             InlineKeyboardButton('😏 𝓐𝓫𝓸𝓾𝓽', callback_data='about')
-        ]]
+        ]] 
+            
         reply1 = await query.message.reply_text(
             text="▢▢▢"
         )
@@ -539,7 +538,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('😎Owner', url='https://t.me/Pros_Movies_Empire'),
+            InlineKeyboardButton('😎Owner', url='https://t.me/MoviesGod4u'),
             InlineKeyboardButton('♥️ Source', callback_data='source')
         ], [
             InlineKeyboardButton('🏠 Home', callback_data='start'),
