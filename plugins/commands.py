@@ -44,11 +44,8 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ 𝒜𝒹𝒹 ℳℯ 𝒯ℴ 𝒴ℴ𝓊𝓇 𝒢𝓇ℴ𝓊𝓅𝓈 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🔍 𝓢𝓮𝓪𝓻𝓬𝓱', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('😈 𝓞𝔀𝓷𝓮𝓻 😈', url='https://t.me/MoviesGod4u')
-            ],[
             InlineKeyboardButton('ℹ️ 𝓗𝓮𝓵𝓹', callback_data='help'),
-            InlineKeyboardButton('😏 𝓐𝓫𝓸𝓾𝓽', callback_data='about')
+            InlineKeyboardButton('🔐 Close', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -90,11 +87,8 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ 𝒜𝒹𝒹 ℳℯ 𝒯ℴ 𝒴ℴ𝓊𝓇 𝒢𝓇ℴ𝓊𝓅𝓈 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🔍 𝓢𝓮𝓪𝓻𝓬𝓱', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('😈 𝓞𝔀𝓷𝓮𝓻 😈', url='https://t.me/MoviesGod4u')
-            ],[
             InlineKeyboardButton('ℹ️ 𝓗𝓮𝓵𝓹', callback_data='help'),
-            InlineKeyboardButton('😏 𝓐𝓫𝓸𝓾𝓽', callback_data='about')
+            InlineKeyboardButton('🔐 Close', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
