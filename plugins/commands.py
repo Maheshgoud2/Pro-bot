@@ -44,9 +44,6 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ 𝒜𝒹𝒹 ℳℯ 𝒯ℴ 𝒴ℴ𝓊𝓇 𝒢𝓇ℴ𝓊𝓅𝓈 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🔥 𝓒𝓱𝓪𝓷𝓷𝓮𝓵 🔥', url='https://t.me/MovieGod4uTeam'),
-            InlineKeyboardButton('🔥 𝓖𝓻𝓸𝓾𝓹 🔥', url='https://t.me/MoviesGod4u')
-            ],[
             InlineKeyboardButton('🔍 𝓢𝓮𝓪𝓻𝓬𝓱', switch_inline_query_current_chat=''),
             InlineKeyboardButton('😈 𝓞𝔀𝓷𝓮𝓻 😈', url='https://t.me/MoviesGod4u')
             ],[
@@ -92,9 +89,6 @@ async def start(client, message):
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
             InlineKeyboardButton('➕ 𝒜𝒹𝒹 ℳℯ 𝒯ℴ 𝒴ℴ𝓊𝓇 𝒢𝓇ℴ𝓊𝓅𝓈 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],[
-            InlineKeyboardButton('🔥 𝓒𝓱𝓪𝓷𝓷𝓮𝓵 🔥', url='https://t.me/MovieGod4uTeam'),
-            InlineKeyboardButton('🔥 𝓖𝓻𝓸𝓾𝓹 🔥', url='https://t.me/MoviesGod4u')
             ],[
             InlineKeyboardButton('🔍 𝓢𝓮𝓪𝓻𝓬𝓱', switch_inline_query_current_chat=''),
             InlineKeyboardButton('😈 𝓞𝔀𝓷𝓮𝓻 😈', url='https://t.me/MoviesGod4u')
