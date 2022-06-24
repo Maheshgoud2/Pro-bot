@@ -42,10 +42,10 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('➕ 𝒜𝒹𝒹 ℳℯ 𝒯ℴ 𝒴ℴ𝓊𝓇 𝒢𝓇ℴ𝓊𝓅𝓈 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕ 𝘈𝘥𝘥 𝘔𝘦 𝘛𝘰 𝘠𝘰𝘶𝘳 𝘎𝘳𝘰𝘶𝘱 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('ℹ️ 𝓗𝓮𝓵𝓹', callback_data='help'),
-            InlineKeyboardButton('🔐 Close', callback_data='close_data')
+            InlineKeyboardButton('ℹ️ 𝘏𝘦𝘭𝘱', callback_data='help'),
+            InlineKeyboardButton('🔐 𝘊𝘭𝘰𝘴𝘦', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -85,10 +85,10 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('➕ 𝒜𝒹𝒹 ℳℯ 𝒯ℴ 𝒴ℴ𝓊𝓇 𝒢𝓇ℴ𝓊𝓅𝓈 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕ 𝘈𝘥𝘥 𝘔𝘦 𝘛𝘰 𝘠𝘰𝘶𝘳 𝘎𝘳𝘰𝘶𝘱 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('ℹ️ 𝓗𝓮𝓵𝓹', callback_data='help'),
-            InlineKeyboardButton('🔐 Close', callback_data='close_data')
+            InlineKeyboardButton('ℹ️ 𝘏𝘦𝘭𝘱', callback_data='help'),
+            InlineKeyboardButton('🔐 𝘊𝘭𝘰𝘴𝘦', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
