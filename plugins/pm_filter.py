@@ -506,10 +506,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('𝘈𝘶𝘵𝘰 𝘍𝘪𝘭𝘵𝘦𝘳', callback_data='autofilter')
         ], [
             InlineKeyboardButton('𝘊𝘰𝘯𝘯𝘦𝘤𝘵𝘪𝘰𝘯', callback_data='coct'),
-            InlineKeyboardButton('Extra Mods', callback_data='extra')
+            InlineKeyboardButton('𝘌𝘹𝘵𝘳𝘢 𝘔𝘰𝘥𝘴', callback_data='extra')
         ], [
-            InlineKeyboardButton('🏠 𝘏𝘰𝘮𝘦', callback_data='start'),
-            InlineKeyboardButton('🔮 𝘚𝘵𝘢𝘵𝘶𝘴', callback_data='stats')
+            InlineKeyboardButton('𝘏𝘰𝘮𝘦', callback_data='start'),
+            InlineKeyboardButton('𝘚𝘵𝘢𝘵𝘶𝘴', callback_data='stats')
         ]]
         reply1 = await query.message.reply_text(
             text="▢▢▢"
@@ -535,11 +535,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('😎Owner', url='https://t.me/Spiner84'),
-            InlineKeyboardButton('♥️ Source', callback_data='source')
+            InlineKeyboardButton('𝘖𝘸𝘯𝘦𝘳', url='https://t.me/Spiner84'),
+            InlineKeyboardButton('𝘚𝘰𝘶𝘳𝘤𝘦', callback_data='source')
         ], [
-            InlineKeyboardButton('🏠 Home', callback_data='start'),
-            InlineKeyboardButton('🔐 Close', callback_data='close_data')
+            InlineKeyboardButton('𝘏𝘰𝘮𝘦', callback_data='start'),
+            InlineKeyboardButton('𝘊𝘭𝘰𝘴𝘦', callback_data='close_data')
         
         ]]
         reply1 = await query.message.reply_text(
