@@ -468,16 +468,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕ 𝘈𝘥𝘥 𝘔𝘦 𝘵𝘰 𝘠𝘰𝘶 𝘎𝘳𝘰𝘶𝘱 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            
             ],[
-            InlineKeyboardButton('🔥 ᴄʜᴀɴɴᴇʟ 🔥', url='https://t.me/MoviesSeriesPro'),
-            InlineKeyboardButton('🔥 ɢʀᴏᴜᴘ 🔥', url='https://t.me/+AQJg3vyQyhM2YTA1')
+            InlineKeyboardButton('𝘏𝘦𝘭𝘱', callback_data='help'),
+            InlineKeyboardButton('𝘈𝘣𝘰𝘶𝘵', callback_data='about')
             ],[
-            InlineKeyboardButton('🔍 ꜱᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('😈 ᴏᴡɴᴇʀ 😈', url='https://t.me/MoviesGod4u')
-            ],[
-            InlineKeyboardButton('ℹ️ ʜᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('😏 ᴀʙᴏᴜᴛ', callback_data='about')
+            InlineKeyboardButton('𝘊𝘭𝘰𝘴𝘦', callback_data='close_data')
         ]] 
             
         reply1 = await query.message.reply_text(
